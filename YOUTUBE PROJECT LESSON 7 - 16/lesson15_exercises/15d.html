@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15D Exercise</title>
+
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .fixed-position {
+            background-color: rgb(124, 124, 124);
+            width: 320px;
+            height: 180px;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        body {
+            height: 3000px;
+        }
+
+        .absolute-position {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 30px;
+            border-width: 0;
+            border-style: solid;
+            cursor: pointer;
+        }
+
+        button:active {
+            opacity: 0.7;
+        }
+
+        .absolute-position2 {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            position: absolute;
+            bottom: 8px;
+            right: 5px;
+            font-size: 12px;
+            border-radius: 2px;
+            font-weight: 500;
+            font-family: Arial;
+            padding-bottom: 2px;
+            padding-top: 2px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "fixed-position">
+        <div class = "absolute-position">
+            <button> 
+                X
+            </button> 
+        </div>
+        <div class = "absolute-position2">
+            0:29
+        </div>
+    </div>
+</body>
+</html>

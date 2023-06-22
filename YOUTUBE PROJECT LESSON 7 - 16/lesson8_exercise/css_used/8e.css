@@ -1,0 +1,56 @@
+p
+{
+    font-family: Arial;
+    font-size: 40px;
+}
+
+input
+{
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    width: 350px;
+}
+
+.request
+{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding-top: 9px;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-bottom: 9px;
+    border: none;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sched
+{
+    background-color: rgb(245, 245, 245);
+    font-size: 14px;
+    padding-top: 9px;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-bottom: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+.request:hover, .sched:hover
+{
+    opacity: 0.8;
+}
+
+.request:active, .sched:active
+{
+    opacity: 0.5;
+}

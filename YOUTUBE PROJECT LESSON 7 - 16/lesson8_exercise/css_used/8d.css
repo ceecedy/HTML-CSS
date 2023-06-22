@@ -1,0 +1,58 @@
+.first, .last
+{
+    border-radius: 5px;
+    font-size: 16px;
+    color: gray;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 9px;
+    width: 100px;
+}
+
+.email
+{
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    color: gray;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+    width: 240px;
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 9px;
+}
+
+button
+{
+    background-color: rgb(98, 98, 244);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    padding-top: 9px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 9px;
+    width: 274px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    opacity: 0.8;
+}
+
+button:active
+{
+    opacity: 0.6;
+}

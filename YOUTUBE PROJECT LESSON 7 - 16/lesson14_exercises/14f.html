@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14F Exercises</title>
+
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .first-side-panel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 70px;
+            background-color: rgb(33, 33, 33);
+        }
+
+        .first-picture, .second-picture, .third-picture {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .picture-one, .picture-two, .picture-three {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .picture-one:active, .picture-two:active, .picture-three:active {
+            opacity: 0.8;
+        }
+
+        .second-side-panel {
+            position: fixed;
+            top: 0;
+            left: 70px;
+            bottom: 0;
+            width: 150px;
+            background-color: rgb(55, 55, 55);
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .info-word-holder {
+            color: white;
+            font-size: 14px;
+        }
+
+        .add-sign {
+            color: rgb(150, 150, 150);
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .add-sign:active {
+            opacity: 0.8;
+        }
+
+        .channel {
+            color: rgb(150, 150, 150);
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class = "first-side-panel">
+        <div class = "first-picture">
+            <img class = "picture-one" src="jerry.webp">
+        </div>
+        <div class = "second-picture">
+            <img class = "picture-two" src="oggy.jpeg">
+        </div>
+        <div class = "third-picture">
+            <img class = "picture-three" src="Laughing_dog.jpeg">
+        </div>
+    </div>
+    <div class = "second-side-panel">
+        <div class = "info">
+            <div class = "info-word-holder">
+                INFO
+            </div>
+            <div class = "add-sign">+</div>
+        </div>
+        <div class = "channel">
+            # new-videos
+        </div>
+        <div class = "channel">
+            # updates
+        </div>
+        <div class = "channel">
+            # faqs
+        </div>
+    </div>
+</body>
+</html>

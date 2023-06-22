@@ -1,0 +1,23 @@
+p
+{
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.name 
+{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.suggestion
+{
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.deliver
+{
+    text-decoration: underline;
+}

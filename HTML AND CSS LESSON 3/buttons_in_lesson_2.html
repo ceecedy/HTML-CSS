@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<style>
+    .subscribe_button_lesson_3
+    {
+        background-color: rgb(200, 0, 0);
+        color: white; 
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.5s;
+    }
+
+    .subscribe_button_lesson_3:hover
+    {
+        opacity: 0.8;
+    }
+
+    .subscribe_button_lesson_3:active 
+    {
+        opacity: 0.5;
+    }
+
+    .join_button_lesson_3
+    {
+        background-color: white;
+        border-color: rgb(41, 118, 211);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(41, 118, 211);
+        height: 36px;
+        width: 62px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: background-color 0.5s, color 0.5s;
+    }
+
+    .join_button_lesson_3:hover
+    {
+        background-color: rgb(41, 118, 211);
+        color: white;
+        font-weight: bold;
+    }
+
+    .join_button_lesson_3:active
+    {
+        opacity: 0.8;
+    }
+
+    .tweet_button_lesson_3
+    {
+        background-color: rgb(29 161 242);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        border: none;
+        border-radius: 15px;
+        height: 36px;
+        width: 74px;
+        cursor: pointer;
+        transition: box-shadow 0.5s;
+    }
+
+    .tweet_button_lesson_3:hover
+    {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .tweet_button_lesson_3:active
+    {
+        opacity: 0.8;
+    }
+
+</style>
+
+<html>
+    <button class = "subscribe_button_lesson_3">
+        SUBSCRIBE
+    </button>
+    <button class = "join_button_lesson_3">
+        JOIN
+    </button>
+    <button class = "tweet_button_lesson_3">
+        Tweet
+    </button>
+
+</html>
+
+<!-- css selectors with syntax ":argument" or for instance ":hover" will let the button to have some 
+    effects if the cursor happens to hover the particular button. -->
+<!-- css selectors with colon and extra arguments, for instance ":hover" are called pseudo-class
+        - it basically adds a styles in a certain situation. 
+        - for instance if the button gets hovered knowing it has :hover selector, it will cast a
+         properties given on it.-->
+<!-- other than :hover, :active is another example of pseudo-class in css. The syntax is the same as how we 
+    put :hover in the css selector. :active is used to give a style to the html element once it was clicked 
+    or the html element receiving input to the user. -->
+
+<!-- opacity - used in css style block to declare how to see through or make a transparent html element.
+        - to effectively use opacity, it should have a css value not greater than 1 
+     transition - used to delay the effect of the css property to make it a smooth cast. 
+        - usually declared in the main css selector of one html element.
+        - taking 2 arguments, the css property and the time of delay 
+        -  you can give multiple css property to transition.
+            - e.g. transition: background-color 0.5s, color 0.5s-->
+
+<!-- rgba (red green blue alpha) - where a is the opacity like how see through it is. 
+        - 0.15 is the common value given to the a or opacity value -->
+
+<!-- box-shadow is normally taking up 4 arguments, "box-shadow: horizontal vertical blur rgba or color"
+        - for instance, "box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)"-->

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12e Exercise</title>
+
+    <style>
+        .container
+        {
+            width: 300px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(200, 200, 200);
+            border-radius: 5px;
+        }
+        
+        .flexbox-container
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            padding: 2px;
+        }
+
+        .content-1
+        {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100px;
+        }
+
+        .content-2
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(49, 109, 245);
+            color: white;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "flexbox-container">
+            <div class = "content-1">
+                Home
+            </div>
+            <div class = "content-2">
+                14
+            </div>
+        </div>
+        <div class = "flexbox-container">
+            <div class = "content-1">
+                Notifications
+            </div>
+            <div class = "content-2">
+                3
+            </div>
+        </div>
+        <div class = "flexbox-container">
+            <div class = "content-1">
+                Messages
+            </div>
+            <div class = "content-2">
+                5
+            </div>
+        </div>
+    </div>
+</body>
+</html>

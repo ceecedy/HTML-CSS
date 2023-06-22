@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12g Exercise</title>
+
+    <style>
+        .container
+        {
+            width: 400px;
+            border-color: gainsboro;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .flexbox
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-bottom: 5px;
+        }
+
+        .profile-picture
+        {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 0px;
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-right: 15px;
+        }
+
+        .profile-details
+        {
+            width: 200px;
+        }
+
+        .profile-name
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .profile-nickname
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: rgb(150, 150, 150);
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+
+        .Social-status
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: rgb(150, 150, 150);
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+
+        .follow-button
+        {
+            margin-left: 30px;
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .follow-button:active
+        {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "flexbox">
+            <img class = "profile-picture" src="fighting_squirrel.jpeg">
+            <div class = "profile-details">
+                <p class = "profile-name">
+                    Sandy Cheeks
+                </p>
+                <p class = "profile-nickname">
+                    The Amazing Squirrel
+                </p>
+                <p class = "Social-status">
+                    Popular
+                </p>
+            </div>
+            <button class = "follow-button">Follow</button>
+        </div>
+        
+        <div class = "flexbox">
+            <img class = "profile-picture" src="monkey-dong.jpeg">
+            <div class = "profile-details">
+                <p class = "profile-name">
+                    Monkey Dong
+                </p>
+                <p class = "profile-nickname">
+                    The "High" Monkey
+                </p>
+                <p class = "Social-status">
+                    Popular
+                </p>
+            </div>
+            <button class = "follow-button">Follow</button>
+        </div>
+
+        <div class = "flexbox">
+            <img class = "profile-picture" src="Laughing_dog.jpeg">
+            <div class = "profile-details">
+                <p class = "profile-name">
+                    Funny Dog
+                </p>
+                <p class = "profile-nickname">
+                    Happy Dog
+                </p>
+                <p class = "Social-status">
+                    Popular
+                </p>
+            </div>
+            <button class = "follow-button">Follow</button>
+        </div>
+    </div>
+</body>
+</html>

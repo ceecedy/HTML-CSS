@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox practice</title>
+    <style>
+        .flexbox
+        {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "flexbox">
+        <div style = "background-color: lightblue;">
+            div 1 testing 
+        </div>
+        <div style = "background-color: lightpink;">
+            div 2 
+            <p>
+                paragraph
+            </p>
+        </div>
+    </div>
+
+    <div class = "flexbox">
+        <div style = 
+            "background-color: lightblue;
+             width: 100px;">
+            100px
+        </div>
+        <div style = 
+            "background-color: lightpink;
+             flex: 1;">
+            div 2 
+            <p>
+                flex 1 
+            </p>
+        </div>
+        <div style = 
+            "background-color: lightyellow;
+             flex: 2;">
+            div 2 
+            <p>
+                flex 2 
+            </p>
+        </div>
+    </div>
+
+    <div class = "flexbox" 
+         style = "margin-top: 100px; 
+                  border-width: 1px; 
+                  border-style: solid; 
+                  border-color: gainsboro;">
+        <div style = 
+            "background-color: lightblue;
+             width: 100px;">
+            100px
+        </div>
+        <div style = 
+            "background-color: lightpink;
+             width: 100px;">
+            div 2 
+            <p>
+                100px
+            </p>
+        </div>
+        <div style = 
+            "background-color: lightyellow;
+             width: 100px;">
+            div 2 
+            <p>
+                100px
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    Flexbox is like a grid but is working like a inline-block format if declared in css flexbox selector is 
+    flex-direction: row. 
+
+    If in one div, there's a two or more elements declared in a flexbox div, the elements would be vertically aligned. 
+
+    If in flexbox, there div element that has a declaration of specific width it will have its own width. 
+
+    flex: 1 - A css property that will give a flexbox to work like a 1fr in grid. To give the all remaining spaces. 
+
+    Grid is more rigid. 
+
+    justify-content is one of the property of flexbox.
+        - justify-content: = will start on the very start of the flexbox.
+        - justify-end = will start on the end of the flexbox. 
+        - justify-center = will start on the center of the flexbox. 
+        - justify-spread = will spread the elements across the flexbox.
+        - space-between = will give every element an equal space to the container. 
+
+    align-items - another flexbox property that allows the elements how will they take their own spaces. 
+        - by default, align-items will be at stretch (align-items: stretch).
+        - align-items: start - will take its only needed vertical space. 
+        - align-items: end - the element will start on the bottom of their spaces. 
+        - align-items: center - the element will start on the center of their spaces. 
+        
+-->

@@ -1,0 +1,505 @@
+p
+{
+    font-family: Roboto, Arial;
+}
+
+body
+{
+    margin: 0;
+    height: 3000px;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+}
+
+.video_thumbnail
+{
+    width: 100%;
+}
+
+.timestamp
+{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-family: Roboto, Arial;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.video-preview
+{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.video-preview:active
+{
+    opacity: 0.8;
+}
+
+.video-channel-info_grid
+{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.title 
+{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.author
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.stats
+{
+    margin-top: 4px;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+
+.profile_picture
+{
+    width: 40px;
+    border-radius: 50px;
+}
+
+.thumbnail_row
+{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-grids
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.header-flexbox
+{
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    background-color: white;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.sidebar 
+{
+    background-color: white;
+    position: fixed;
+    top: 57px;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    padding-top: 5px;
+    z-index: 2;
+}
+
+.sidebar-link /* Using justify-content: center and align-items: center will make a div centered */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+}
+
+.sidebar-link:hover
+{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.sidebar-link:active 
+{
+    opacity: 0.8;
+}
+
+.sidebar-link img /* This will target all img elements inside the sidebar-link class */
+{
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.sidebar-link div /* This will target all div elements inside the sidebar-link class */
+{
+    font-family: Roboto, Arial;
+    font-size: 10.5px;
+    margin-top: 2px;
+}
+
+.left-section
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+}
+
+.hamburger-menu
+{
+    height: 24px;
+    margin-left: 28px;
+    margin-right: 24px;
+}
+
+.youtube-logo
+{
+    height: 20px;
+}
+
+.middle-section
+{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 600px;
+}
+
+.input-search
+{
+    flex: 1; 
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
+    border-color: rgb(192, 192, 192);
+    width: 0px;
+}
+
+.input-search::placeholder
+{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-button
+{
+    height: 40px;
+    width: 66px;
+    background-color:rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button:active,
+.voice-search:active,
+.upload-icon-container:active, 
+.youtube-app-icon-container:active,
+.notif-icon-container:active,
+.account-icon-container:active
+{
+    opacity: 0.8;
+}
+
+.voice-search
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This will target the .tooltip element inside .search-button */
+.search-button .tooltip, 
+.voice-search .tooltip, 
+.upload-icon-container .tooltip,
+.youtube-app-icon-container .tooltip, 
+.notif-icon-container .tooltip,
+.account-icon-container .tooltip
+{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    bottom: -30px;
+    opacity: 0; /* This will help hide the tool tip */
+    transition: opacity 0.15s; /* This will help the opacity to have an animation delay */
+    pointer-events: none; /* This will disable the element on a certain event. */
+    white-space: nowrap; /* To prevent the wrapping of text in the element. */
+}
+
+/* This will target the .tooltip inside search button when hovering .search-button:hover */
+.search-button:hover .tooltip, 
+.voice-search:hover .tooltip, 
+.upload-icon-container:hover .tooltip, 
+.youtube-app-icon-container:hover .tooltip, 
+.notif-icon-container:hover .tooltip,
+.account-icon-container:hover .tooltip
+{
+    opacity: 1;
+}
+
+.search-icon
+{
+    height: 25px;
+}
+
+.voice-icon
+{
+    height: 24px;
+}
+
+.right-section
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.upload-icon-container, 
+.youtube-app-icon-container,
+.notif-icon-container,
+.account-icon-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-icon
+{
+    height: 24px; 
+}
+
+.youtube-app-icon
+{
+    height: 24px;
+}
+
+.notif
+{
+    position: relative;
+}
+
+.notif-icon
+{
+    height: 24px;
+}
+
+.notif-count 
+{
+    background-color: #cc0000;
+    color: white;
+    border: 2px solid white;
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+.account-icon
+{
+    height: 32px;
+    border-radius: 16px;
+}
+
+.video-link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.author-link, .stats-link
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.channel-tooltip 
+{
+    background-color: white;
+    width: 200px;
+    padding: 12px 12px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    position: absolute;
+    top: 55px;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none; /* This will disable the element on a certain event. */
+    display: flex;
+    align-items: center;
+    transition: opacity 0.15s; 
+}
+
+.profile-picture-container
+{
+    position: relative;
+    display: inline-block;
+}
+
+.profile-picture-container:hover .channel-tooltip 
+{
+    opacity: 1;
+}
+  
+.channel-tooltip-picture 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.channel-tooltip-name 
+{
+    font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.channel-tooltip-stats 
+{
+    font-family: Roboto, Arial;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 800px) /* If the screen size is 600px or less, make the grids into 2*/
+{   
+    .video-grids
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1080px) /* If the screen size is now equal or larger than 1000px, cast 4 grids at equal*/
+{   
+    .video-grids
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Making a sample of combining two arguments in media query in css*/
+/* This will set the video grids into 3 columns/grids if the screensize is in between 801px and 1079px*/
+@media (min-width: 801px) and (max-width: 1079px)
+{
+    .video-grids
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+ 
+  
+
+/* You can declare a same property to a two specified selectors.
+    - E.g:
+        .author, .stats
+            {
+                display: inline-block;
+            }
+            
+
+    max-width - a width property declaration in css that allows the element to stop growing if it reaches the max width 
+            e.g. max-width: 300px
+
+    Another psudoclass technique in css is double colon. This is to target one element inside of a element.
+
+    media query - helpful in css that can help you to achieve responsive design. 
+    e.g. 
+    at css "@media ("screensize") {input css selectors here}
+
+    another e.g. 
+    "
+            @media (max-width: 600px) {
+                .video-grids {
+                    grid-template-columns: 1fr 1fr 
+                }
+            }
+    "
+    
+    CSS Shortcuts
+
+    in padding/margin, when using one property with two arguments, this is the order:
+            padding: 10px 10px;
+            the first 10px is for top and bottom, the second 10px is for right and left. 
+            this is same as in margins. 
+
+            if there are 4 values, this will be the order:
+            padding: 10px 10px 10px 10px;
+            it will be on the clockwise pattern. 
+            the first 10px is for top, the second is for right, the third is for bottom, the fourth is for left. 
+
+            In border, you can make a shortcut too, and this is the order:
+            border: 1px solid gray;
+            The order is width, style, color. 
+            1px specifies how thick is the width, the solid indicates what kind of style, the gray is what kind of border color.
+
+    
+    Inheritance
+            "If we set a certain property in an element, it will pass down to its child or its inner element".
+
+    Semantic Elements
+            Special elements that is working like div. 
+            E.g. Nav, header, main, section
+*/ 

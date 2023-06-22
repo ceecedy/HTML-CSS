@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13G Exercise</title>
+
+    <style>
+        .main-container {
+            width: 400px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .flex-content {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .uplaoder {
+            margin-right: 10px;
+        }
+
+        .profile-uploader {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+
+        .tweet-details {
+            flex: 1;
+        }
+
+        .content-header {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            margin-bottom: 5px;
+        }
+
+        .name {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            margin-right: 5px;
+        }
+
+        .username {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: rgb(111, 111, 111);
+        }
+
+        .content-title {
+            margin-bottom: 10px;
+        }
+
+        .content {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 5px;
+        }
+
+        .link-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(200, 200, 200);
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .link-content:active {
+            opacity: 0.7;
+        }
+
+        .container-gray {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(220, 220, 220);
+            margin-right: 10px;
+        }
+
+        .website-and-title {
+            flex: 1;
+        }
+
+        .website {
+            color: rgb(111, 111, 111);
+            margin-bottom: 3px;
+        }
+
+        .video-title {
+            line-height: 22px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class = "main-container">
+        <div class = "flex-content">
+            <div class = "uplaoder">
+                <img class = "profile-uploader" src = "oggy.jpeg">
+            </div>
+            <div class = "tweet-details">
+                <div class = "content-header">
+                    <div class = "name">
+                        supersimpledev
+                    </div>
+                    <div class = "username">
+                        @supersimpledev.
+                    </div>
+                </div>
+                <div class = "content-title">
+                    <p class = "content">
+                        What is backend web development? A complete overview. New Video is up!
+                    </p>
+                </div>
+                <a href = "https://www.youtube.com/watch?v=XBu54nfzxAQ" target="_blank">
+                    <div class = "link-content">
+                        <div class = "container-gray"></div>
+                        <div class = "website-and-title">   
+                            <div class = "website">
+                                youtube.com
+                            </div>
+                            <div class = "video-title">
+                                Backend web development - A complete overview (2021)
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
